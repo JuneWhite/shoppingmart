@@ -1,0 +1,119 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+html,
+body {
+  height: 100%;
+}
+#app {
+  height: 100%;
+}
+li{
+	list-style: none;
+}
+.container {
+  width: 100% !important;
+}
+.page {
+  width: 1200px !important;
+	margin: 0 auto;
+}
+/* 商品区块 */
+.proSub{
+	overflow: hidden;
+	text-align: center;
+	height: 440px;
+}
+.proSub img{
+	width: auto;
+	height: 100%;
+	padding: 10px 0;
+}
+/* 商品展示框 */
+.proInfo{
+	/* border: 1px solid #eee; */
+	width: 100%;
+	text-align: center;
+	position: relative;
+	cursor: pointer;
+}
+.proInfo:hover{
+	animation: pulse 1s;
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.proInfo .proCover{
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+}
+.proInfo .proCover img{
+	margin-top: 10px;
+	width: 95%;
+}
+.productionInfoBox{
+	width: 95%;
+	background-color:rgba(180, 170, 160, 0.5);
+	position: absolute;
+	bottom: 0px;
+	left: 2.5%;
+}
+.proInfo .proTitle{
+	text-align: center;
+	font-size: 16px;
+	line-height: 17px;
+	margin: 10px auto;
+	width: 80%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	bottom: 20px;
+	color: white;
+	left: 20%;
+	font-size: 16px;
+}
+.proInfo .proPrice{
+	text-align: center;
+	font-size: 16px;
+	line-height: 17px;
+	color: #f40;
+	margin-bottom:10px;
+	left: 45%;
+}
+
+/* 底部区域 */
+.padding-bottom-20{ 
+	padding-bottom: 20px;
+}
+.bgcolor-dark{
+	background-color:#333;
+	color:#fff;
+}
+.move-enter-active {
+	transition: all .5s ease;
+}
+.move-leave-active {
+	transition: all .5s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.move-enter, .slide-fade-leave-to{
+	opacity: 0;
+}
